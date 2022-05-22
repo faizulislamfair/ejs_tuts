@@ -28,8 +28,14 @@
        </form>
 
        <ul>
-           <li><%=  plNames %></li>
+            <% if(plNames.length > 0){ %>
+                <li><%=  plNames %></li>
+            <% }else{ %>
+                <p>No data found</p>
+            <% } %>
+
        </ul>
+
    </main>
    
    <footer>
