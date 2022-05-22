@@ -7,6 +7,34 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>This is a EJS File</h1>
+
+   <header>
+       <nav>
+           <ul>
+               <li><a href="/">Home</a></li>
+               <li><a href="/contact">Contact</a></li>
+           </ul>
+       </nav>
+   </header>
+
+   <main>
+       <form action="/" method="post">
+           <input 
+           type="text"
+           placeholder="programming language"
+           name="pLanguage"
+           />
+           <button type="submit">Add</button>
+       </form>
+
+       <ul>
+           <li><%=  plNames %></li>
+       </ul>
+   </main>
+   
+   <footer>
+       <p>All rights reserved by &copy; Faizul Islam</p>
+   </footer>
+
 </body>
 </html>
